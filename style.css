@@ -1,0 +1,57 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+body{
+    background-image: url(images/images.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0;
+}
+  
+  .nav{
+    color: white;
+    padding: 1rem;
+    text-align: center
+    }
+
+  /* Container Flexbox Styles */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Child Div Styles */
+  .child {
+    width: calc(30% - 20px);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .child:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .child {
+      width: calc(45% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .child {
+      width: calc(100% - 20px);
+    }
+  }
+  
